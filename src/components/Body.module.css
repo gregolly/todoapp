@@ -1,0 +1,130 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 46rem;
+    margin: 0 auto;
+}
+
+.formWrapper {
+    display: flex;
+    position: absolute;
+    top: -20px;
+    width: 100%;
+}
+
+.formWrapper button[type=submit] {
+    display: flex;
+    align-items: center;
+    background-color: var(--blue-300);
+    color: var(--white);
+    border: 0;
+    padding: 1rem;
+    border-radius: 8px;
+
+    gap: 8px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.formWrapper button[type=submit]:not(:disabled):hover {
+    background-color: var(--blue-100);
+}
+
+.formWrapper button[type=submit]:disabled {
+    background-color: rgb(24, 24, 98);
+    cursor: not-allowed;
+}
+
+.searchInput {
+    background-color: var(--gray-500);
+    color: var(--white);
+    flex: 1;
+    border: 0;
+    height: 3.375rem;
+    padding-left: 1rem;
+    border-radius: 8px;
+    margin-right: 8px;
+    width: 600px;
+}
+
+.tasksWrapper {
+    width: 100%;
+    margin-top: 5.6875rem;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.labels .createdTasks {
+    color: var(--blue-100);
+    gap: 8px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.labels .createdTasks > span {
+    background-color: var(--gray-400);
+    color:  var(--white);
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+}
+
+.labels .doneTasks {
+    color: var(--purple-100);
+    gap: 8px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.labels .doneTasks > span {
+    background-color: var(--gray-400);
+    color:  var(--white);
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+}
+
+.task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid var(--gray-400);
+    margin-top: 1.5rem;
+    padding-top: 4rem;
+}
+
+.task div + div {
+    margin-top: 0.75rem;
+}
+
+.task > img {
+    width: 56px;
+}
+
+.noTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid var(--gray-400);
+    margin-top: 1.5rem;
+    padding-top: 4rem;
+}
+
+.firstParagraph {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--gray-300);
+    margin-top: 1rem;
+}
+
+.secondParagraph {
+    font-weight: normal;
+    color: var(--gray-300);
+}
